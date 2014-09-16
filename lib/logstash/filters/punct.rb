@@ -28,6 +28,6 @@ class LogStash::Filters::Punct < LogStash::Filters::Base
 
     # If for some reason the field is an array of values, take the first only.
     original_value = original_value.first if original_value.is_a?(Array)
-    event[@target] = original_value.tr('A-Za-z0-9 \t','')
+    event[@target] = original_value.tr('A-Za-z0-9 \t','').force_encoding(Encoding::UTF_8)
   end # def filter
 end # class LogStash::Filters::Punct
