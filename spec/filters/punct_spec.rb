@@ -1,8 +1,8 @@
-require "test_utils"
+require "spec_helper"
 require "logstash/filters/punct"
 
 describe LogStash::Filters::Punct do
-  extend LogStash::RSpec
+  
 
   describe "all defaults" do
     config <<-CONFIG
