@@ -7,7 +7,6 @@ require "logstash/namespace"
 # a separate field. This is often used for fingerprinting log events.
 class LogStash::Filters::Punct < LogStash::Filters::Base
   config_name "punct"
-  milestone 1
 
   # The field reference to use for punctuation stripping
   config :source, :validate => :string, :default => "message"
