@@ -21,7 +21,7 @@ class LogStash::Filters::Punct < LogStash::Filters::Base
 
   public
   def filter(event)
-    return unless filter?(event)
+    
 
     original_value = event[@source]
 
