@@ -1,3 +1,6 @@
+
+### This plugin is deprecated and will be deleted. Please use fingerprint
+
 # Logstash Plugin
 
 [![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-filter-punct.svg)](https://travis-ci.org/logstash-plugins/logstash-filter-punct)
