@@ -1,0 +1,61 @@
+:plugin: punct
+:type: filter
+
+///////////////////////////////////////////
+START - GENERATED VARIABLES, DO NOT EDIT!
+///////////////////////////////////////////
+:version: %VERSION%
+:release_date: %RELEASE_DATE%
+:changelog_url: %CHANGELOG_URL%
+:include_path: ../../../logstash/docs/include
+///////////////////////////////////////////
+END - GENERATED VARIABLES, DO NOT EDIT!
+///////////////////////////////////////////
+
+[id="plugins-{type}-{plugin}"]
+
+=== Punct
+
+include::{include_path}/plugin_header.asciidoc[]
+
+==== Description
+
+Strip everything but punctuation from a field and store the remainder in the
+a separate field. This is often used for fingerprinting log events.
+
+[id="plugins-{type}s-{plugin}-options"]
+==== Punct Filter Configuration Options
+
+This plugin supports the following configuration options plus the <<plugins-{type}s-common-options>> described later.
+
+[cols="<,<,<",options="header",]
+|=======================================================================
+|Setting |Input type|Required
+| <<plugins-{type}s-{plugin}-source>> |<<string,string>>|No
+| <<plugins-{type}s-{plugin}-target>> |<<string,string>>|No
+|=======================================================================
+
+Also see <<plugins-{type}s-common-options>> for a list of options supported by all
+filter plugins.
+
+&nbsp;
+
+[id="plugins-{type}s-{plugin}-source"]
+===== `source` 
+
+  * Value type is <<string,string>>
+  * Default value is `"message"`
+
+The field reference to use for punctuation stripping
+
+[id="plugins-{type}s-{plugin}-target"]
+===== `target` 
+
+  * Value type is <<string,string>>
+  * Default value is `"punct"`
+
+The field to store the result.
+
+
+
+include::{include_path}/{type}.asciidoc[]
