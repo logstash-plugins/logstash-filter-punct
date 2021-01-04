@@ -3,7 +3,7 @@
 
 # Logstash Plugin
 
-[![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-filter-punct.svg)](https://travis-ci.org/logstash-plugins/logstash-filter-punct)
+[![Travis Build Status](https://travis-ci.com/logstash-plugins/logstash-filter-punct.svg)](https://travis-ci.com/logstash-plugins/logstash-filter-punct)
 
 This is a plugin for [Logstash](https://github.com/elastic/logstash).
 
